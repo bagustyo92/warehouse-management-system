@@ -1,0 +1,2 @@
+[36mINFO[0m[0003] code=400, message=Unmarshal type error: expected=bool, got=string, field=Expirable, offset=101, internal=json: cannot unmarshal string into Go struct field Product.Expirable of type bool  [36mIP[0m="::1" [36mLenght[0m=103 [36mMethod[0m=POST [36mProtocol[0m=HTTP/1.1 [36mType[0m=application/json [36mURL[0m=/inventory/product
+[36mINFO[0m[0004] invalid association []                        [36mIP[0m="::1" [36mLenght[0m=0 [36mMethod[0m=GET [36mProtocol[0m=HTTP/1.1 [36mType[0m= [36mURL[0m=/inventory/product/1

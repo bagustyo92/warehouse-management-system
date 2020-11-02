@@ -1,0 +1,15 @@
+level=panic msg="create gorm client instance failed with message: sql: unknown driver \"mysql\" (forgotten import?)" Time="[31-10-2020][02:07:01]"
+level=panic msg="create gorm client instance failed with message: sql: unknown driver \"mysql\" (forgotten import?)" Time="[31-10-2020][02:12:34]"
+level=panic msg="create gorm client instance failed with message: Error 1049: Unknown database 'wms'" Time="[31-10-2020][02:13:08]"
+level=panic msg="create gorm client instance failed with message: Error 1049: Unknown database 'root'" Time="[31-10-2020][02:13:59]"
+level=panic msg="create gorm client instance failed with message: dial tcp [::1]:3306: connect: connection refused" Time="[31-10-2020][10:38:39]"
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:42:54]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:45:00]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:46:07]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:46:16]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:46:40]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:51:29]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:51:36]" URL=/inventory/product
+level=info msg="Incoming Request" Method=POST Time="[31-10-2020][10:53:47]" URL=/inventory/product
+level=info msg="Incoming Request" Method=GET Time="[31-10-2020][10:59:49]" URL=/inventory/product/1
+level=info msg="Incoming Request" Method=GET Time="[31-10-2020][11:00:10]" URL=/inventory/product/1
