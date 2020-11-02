@@ -1,2 +1,5 @@
 [36mINFO[0m[0015] code=400, message=binding element must be a struct, internal=binding element must be a struct  [36mIP[0m="::1" [36mLenght[0m=0 [36mMethod[0m=GET [36mProtocol[0m=HTTP/1.1 [36mType[0m= [36mURL[0m="/inventory/products?search=Pine&sku"
 [36mINFO[0m[0017] code=400, message=binding element must be a struct, internal=binding element must be a struct  [36mIP[0m="::1" [36mLenght[0m=0 [36mMethod[0m=GET [36mProtocol[0m=HTTP/1.1 [36mType[0m= [36mURL[0m="/inventory/products?search=Pine"
+[36mINFO[0m[0127] record not found                              [36mIP[0m="::1" [36mLenght[0m=0 [36mMethod[0m=GET [36mProtocol[0m=HTTP/1.1 [36mType[0m= [36mURL[0m=/inventory/product/1
+[36mINFO[0m[0018] Error 1103: Incorrect table name ''           [36mIP[0m="::1" [36mLenght[0m=37 [36mMethod[0m=PATCH [36mProtocol[0m=HTTP/1.1 [36mType[0m=application/json [36mURL[0m=/inventory/product
+[36mINFO[0m[0005] record not found                              [36mIP[0m="::1" [36mLenght[0m=0 [36mMethod[0m=GET [36mProtocol[0m=HTTP/1.1 [36mType[0m= [36mURL[0m=/inventory/product/1

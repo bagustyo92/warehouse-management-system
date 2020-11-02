@@ -10,7 +10,7 @@ type Product struct {
 	gorm.Model
 	Name      string
 	SKU       string
-	Expirable bool
+	Expirable *bool
 	Stocks    []Stock    `gorm:"foreignKey:productID"`
 	Inbounds  []Inbound  `gorm:"foreignKey:productID"`
 	Outbounds []Outbound `gorm:"foreignKey:productID"`

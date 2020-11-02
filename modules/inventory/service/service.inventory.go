@@ -17,3 +17,7 @@ func (ps ProductService) GetProducts(query *model.Query) (interface{}, error) {
 func (ps ProductService) DeleteProduct(productID uint) error {
 	return ps.ps.DeleteProduct(productID)
 }
+
+func (ps ProductService) UpdateProduct(productID *model.Product) error {
+	return ps.ps.UpdateProduct(productID)
+}

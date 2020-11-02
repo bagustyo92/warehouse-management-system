@@ -10,6 +10,7 @@ type ProductInterface interface {
 	GetProduct(productID uint) (*model.Product, error)
 	GetProducts(query *model.Query) (interface{}, error)
 	DeleteProduct(productID uint) error
+	UpdateProduct(productID *model.Product) error
 }
 
 type ProductService struct {

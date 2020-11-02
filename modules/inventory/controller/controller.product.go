@@ -31,7 +31,8 @@ func (ic inventoryController) getProduct(c echo.Context) error {
 	productID := c.Param("id")
 	id, err := strconv.ParseUint(productID, 10, 16)
 	if err != nil {
-		fmt.Println(err)
+		logger.MakeLogEntry(c).Info(err)
+		return c.JSON(utils.Response(http.StatusBadRequest, err, nil))
 	}
 
 	product, err := ic.productServ.GetProduct(uint(id))
@@ -57,4 +58,36 @@ func (ic inventoryController) getProducts(c echo.Context) error {
 	}
 
 	return c.JSON(utils.Response(http.StatusOK, "OK", &products))
+}
+
+func (ic inventoryController) updateProducts(c echo.Context) error {
+	product := new(model.Product)
+	fmt.Println(product)
+	if err := c.Bind(product); err != nil {
+		logger.MakeLogEntry(c).Info(err)
+		return c.JSON(utils.Response(http.StatusBadRequest, err, nil))
+	}
+
+	if err := ic.productServ.UpdateProduct(product); err != nil {
+		logger.MakeLogEntry(c).Info(err)
+		return c.JSON(utils.Response(http.StatusBadRequest, err, nil))
+	}
+
+	return c.JSON(utils.Response(http.StatusOK, "OK", "OK"))
+}
+
+func (ic inventoryController) deleteProduct(c echo.Context) error {
+	productID := c.Param("id")
+	id, err := strconv.ParseUint(productID, 10, 16)
+	if err != nil {
+		logger.MakeLogEntry(c).Info(err)
+		return c.JSON(utils.Response(http.StatusBadRequest, err, nil))
+	}
+
+	if err := ic.productServ.DeleteProduct(uint(id)); err != nil {
+		logger.MakeLogEntry(c).Info(err)
+		return c.JSON(utils.Response(http.StatusBadRequest, err, nil))
+	}
+
+	return c.JSON(utils.Response(http.StatusOK, "OK", "OK"))
 }

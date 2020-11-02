@@ -20,8 +20,8 @@ func ApplyController(router *echo.Echo, ps service.ProductInterface) {
 	inventory.POST("/product", handler.createProduct)
 	inventory.GET("/product/:id", handler.getProduct)
 	inventory.GET("/products", handler.getProducts)
-	// inventory.PATCH("/product/:id", handler.updateProduct)
-	// inventory.DELETE("/product/:id", handler.deleteProduct)
+	inventory.PATCH("/product", handler.updateProducts)
+	inventory.DELETE("/product/:id", handler.deleteProduct)
 
 	// stock
 

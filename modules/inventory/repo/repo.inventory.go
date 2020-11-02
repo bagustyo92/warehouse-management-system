@@ -59,5 +59,5 @@ func (pr *ProductRepo) DeleteProduct(productID uint) error {
 }
 
 func (pr *ProductRepo) UpdateProduct(product *model.Product) error {
-	return pr.gdb.Model(&product).Update(&product).Error
+	return pr.gdb.Model(product).Update(product).Error
 }
